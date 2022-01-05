@@ -1,19 +1,18 @@
+import { heroes } from './data/heroes';
 
+console.log('Todos los heroes:',heroes);
 
-const activo = true;
-
-// let mensaje = '';
-
-// if ( !activo ) {
-//     mensaje = 'Activo';
-// } else {
-//     mensaje = 'Inactivo';
+// const getHeroesById = (id) => {
+//   return heroes.find( (heroe) => {
+//     if (heroe.id === id)
+//       return heroe.id === id;
+//     else 
+//       return false  
+//   });
 // }
-// const mensaje = ( activo ) ? 'Activo' : 'Inactivo'; 
-// const mensaje = ( activo ) ? 'Activo' : null; 
-const mensaje = activo && 'Activo';
 
+const getHeroesById = (id) => heroes.find( (heroe) => heroe.id === id);
+console.log(getHeroesById(2));
 
-console.log(mensaje);
-
-
+const getHeroesByOwnder = (owner) => heroes.filter( (heroe) => heroe.owner === owner);
+console.log(getHeroesByOwnder('DC'));
