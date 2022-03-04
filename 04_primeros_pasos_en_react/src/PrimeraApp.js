@@ -1,5 +1,6 @@
 //import React, { Fragment } from "react";
 import React from "react";
+import PropTypes from "prop-types";
 
 //FC funcional components
 const PrimeraApp = ( {saludo} ) => {
@@ -24,5 +25,10 @@ const PrimeraApp = ( {saludo} ) => {
     </>
   );
 };
+
+PrimeraApp.protoType = {
+  saludo: PropTypes.string.isRequired,
+  
+}
 
 export default PrimeraApp;
