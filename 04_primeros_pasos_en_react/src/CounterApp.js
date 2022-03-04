@@ -15,7 +15,7 @@ const CounterApp = ( { value } ) => {
       <h1>Counter App</h1>
       <h2> {value} </h2>
 
-      <button onClick={ (e) => {handleAdd} }>+1</button>
+      <button onClick={ handleAdd }>+1</button>
     </>
   )
 };
