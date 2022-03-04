@@ -2,9 +2,9 @@
 import React from "react";
 
 //FC funcional components
-const PrimeraApp = () => {
+const PrimeraApp = ( {saludo} ) => {
 
-  const saludo = 'hola mundo'; //Valido
+  //const saludo = 'hola mundo'; //Valido
   // const saludo = 123; //Valido
   // const saludo = 123.2; //Valido
   // const saludo = true; //inValido
@@ -14,9 +14,10 @@ const PrimeraApp = () => {
   //   edad: 31,
   // }; //valido pero solo si usamos JSON.Stringify
 
+  console.log(saludo)
+
   return (
     <>
-
       {/* <pre> { JSON.stringify(saludo, null, 3) } </pre> */}
       <h1>{saludo}</h1>
       <h2>Mi primera App</h2>
