@@ -3,7 +3,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 //FC funcional components
-const PrimeraApp = ( {saludo} ) => {
+const PrimeraApp = ( {saludo, subtitulo } ) => {
 
   //const saludo = 'hola mundo'; //Valido
   // const saludo = 123; //Valido
@@ -21,14 +21,17 @@ const PrimeraApp = ( {saludo} ) => {
     <>
       {/* <pre> { JSON.stringify(saludo, null, 3) } </pre> */}
       <h1>{saludo}</h1>
-      <h2>Mi primera App</h2>
+      <h2>{subtitulo}</h2>
     </>
   );
 };
 
 PrimeraApp.protoType = {
   saludo: PropTypes.string.isRequired,
-  
+}
+
+PrimeraApp.defaultProps = {
+  subtitulo: 'Soy un subtitulo',
 }
 
 export default PrimeraApp;
