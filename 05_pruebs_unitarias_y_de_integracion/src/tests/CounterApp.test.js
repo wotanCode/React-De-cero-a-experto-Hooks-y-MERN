@@ -4,6 +4,13 @@ import {shallow} from 'enzyme'
 import "@testing-library/jest-dom"
 
 describe('Pruebas en componente counterApp', () => {
+
+  let wrapper = shallow(<PrimeraApp />)
+
+  beforeEach( () => {
+    wrapper = shallow(<PrimeraApp />)
+  })
+
   test('Prebas de integracion', () =>{
 
     const valor = '31';
@@ -17,10 +24,22 @@ describe('Pruebas en componente counterApp', () => {
     const valor = '100';
     const wrapper = shallow(<PrimeraApp value={valor}/>)
 
-    const numeroValor = wrapper.find('h2').text();
+    const numeroValor = wrapper.find('h2').text().trim();
 
     expect(numeroValor).toBe(valor);
+  });
 
-
+  test('Debe de incrementar con +1', () =>{
+    //const btn1 = wrapper.find('button').at(0).simulate('cliCk');
+    //console.log(btn1)
+    wrapper.find('button').at(0).simulate('click');
+    const counterText = wrapper.find('h2').text().trim();
+    //console.log(counterText);
+    expect(counterText).toBe('11')
+  });
+  test('Debe de incrementar con -1', () =>{
+    wrapper.find('button').at(2).simulate('click');
+    const counterText = wrapper.find('h2').text().trim();
+    expect(counterText).toBe('9')
   });
 });
