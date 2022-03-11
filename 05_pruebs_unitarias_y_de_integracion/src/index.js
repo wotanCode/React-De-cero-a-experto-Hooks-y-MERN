@@ -7,5 +7,5 @@ import './index.css';
 const divROOT = document.querySelector('#root');
 
 
-ReactDOM.render( <PrimeraApp saludo={'Hola soy pedrito'} /> , divROOT)
-// ReactDOM.render( <CounterApp value={31} /> , divROOT)
+//ReactDOM.render( <PrimeraApp saludo={'Hola soy pedrito'} /> , divROOT)
+ ReactDOM.render( <CounterApp value={100} /> , divROOT)
