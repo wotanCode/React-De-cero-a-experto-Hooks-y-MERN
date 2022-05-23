@@ -11,8 +11,10 @@ import ReactDOM from 'react-dom/client';
 // import { Layout } from './components/05-useLayaoutEffect/Layout';
 // import { Memorize } from './components/06- Memos/Memorize';
 // import { MemoHook } from './components/06- Memos/MemoHook';
-import { CallbackHook } from './components/06- Memos/CallbackHook';
+// import { CallbackHook } from './components/06- Memos/CallbackHook';
+import { Padre } from './components/07-TareaMemo/Padre';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <CallbackHook />
+    <Padre />
 );
