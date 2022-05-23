@@ -9,9 +9,10 @@ import ReactDOM from 'react-dom/client';
 // import { FocusScreen } from './components/04-useRef/FocusScreen';
 // import { RealExampleRef } from './components/04-useRef/RealExampleRef';
 // import { Layout } from './components/05-useLayaoutEffect/Layout';
-import { Memorize } from './components/06- Memos/Memorize';
-
+// import { Memorize } from './components/06- Memos/Memorize';
+// import { MemoHook } from './components/06- Memos/MemoHook';
+import { CallbackHook } from './components/06- Memos/CallbackHook';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Memorize />
+    <CallbackHook />
 );
