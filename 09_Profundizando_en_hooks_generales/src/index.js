@@ -12,9 +12,12 @@ import ReactDOM from 'react-dom/client';
 // import { Memorize } from './components/06- Memos/Memorize';
 // import { MemoHook } from './components/06- Memos/MemoHook';
 // import { CallbackHook } from './components/06- Memos/CallbackHook';
-import { Padre } from './components/07-TareaMemo/Padre';
+// import { Padre } from './components/07-TareaMemo/Padre';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-    <Padre />
-);
+// const root = ReactDOM.createRoot(document.getElementById('root'));
+// root.render(
+//     <Padre />
+// );
+
+//Solo para reducers
+import './components/08-useReducer/Intro-reducer.js';
