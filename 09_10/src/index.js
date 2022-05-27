@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+
+//Secion 09 profundizando en hooks
 // import { HookApp } from './HookApp';
 // import { CounterApp } from './components/01-useState/CounterApp';
 // import {CounterWithCustomHook} from './components/01-useState/CounterWithCustomHook';
@@ -13,11 +15,12 @@ import ReactDOM from 'react-dom/client';
 // import { MemoHook } from './components/06- Memos/MemoHook';
 // import { CallbackHook } from './components/06- Memos/CallbackHook';
 // import { Padre } from './components/07-TareaMemo/Padre';
+// import './components/08-useReducer/Intro-reducer.js'; //Solo para reducers
 
-// const root = ReactDOM.createRoot(document.getElementById('root'));
-// root.render(
-//     <Padre />
-// );
+//Seccion 10 useReducer
+import { TodoApp } from './components/08-useReducer/TodoApp';
 
-//Solo para reducers
-import './components/08-useReducer/Intro-reducer.js';
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <TodoApp />
+);
