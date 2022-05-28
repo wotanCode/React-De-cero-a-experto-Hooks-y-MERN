@@ -1,10 +1,10 @@
 export const todoReducer = (state = [], action) => {
   switch (action.type) {
 
-    case 'Agregar':
+    case 'add':
       return [...state, action.payload];
 
-    case 'Borrar':
+    case 'delete':
       return state.filter(todo => todo.id !== action.payload);
 
     case 'Toggle-metodoComplejo':
