@@ -1,14 +1,8 @@
-export const todoReducer = (state =[], action) => {
- switch (action.type) {
-    // case 'add':
-    //   return [
-    //     ...state,
-    //     {
-    //       id: new Date().getTime(),
-    //       desc: action.payload,
-    //       done: false,
-    //     }
-    //   ]
+export const todoReducer = (state = [], action) => {
+  switch (action.type) {
+
+    case 'Agregar':
+      return [...state, action.payload];
 
     default:
       return state;
