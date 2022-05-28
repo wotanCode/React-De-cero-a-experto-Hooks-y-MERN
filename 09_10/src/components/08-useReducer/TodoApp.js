@@ -2,6 +2,10 @@ import { useEffect, useReducer } from 'react';
 import { todoReducer } from './todoReducer';
 import { useForm } from '../hooks/useForm';
 
+import { TodoAdd } from './TodoAdd';
+import { TodoList } from './TodoList';
+import { TodoListItem } from './TodoListItem';
+
 import './styles.css';
 
 const init = () => {
@@ -68,31 +72,14 @@ export const TodoApp = () => {
 
       <div className='row'>
         <div className='col-7'>
-          <ul className='list-group list-group-flush'>
-            {todos.map((todo, idx) => (
-              <li
-                className='list-group-item'
-                key={todo.id}
-              >
-                <p
-                  className={`${todo.done && 'complete'}`}
-                  onClick={() => handleToggle(todo.id)}
-                >
-                  {idx + 1}. {todo.desc}
-                </p>
 
-                <button
-                  className='btn btn-danger'
-                  onClick={() => handleDelete(todo.id)}
-                >
-                  Borrar
-                </button>
-              </li>
-            ))}
-          </ul>
+          <TodoList
+            todos={todos}
+            handleToggle={handleToggle}
+            handleDelete={handleDelete}
+          />
+
         </div>
-
-
 
         <div className='col-5'>
           <h4>Agregar TODO</h4>
