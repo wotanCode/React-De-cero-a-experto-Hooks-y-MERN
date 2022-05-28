@@ -30,6 +30,13 @@ export const TodoApp = () => {
     dispatch(action);
   }
 
+  const handleToggle = (todoId) => {
+    dispatch({
+      type: 'Toggle',
+      payload: todoId,
+    });
+  }
+
   const handleAddSubmit = (e) => {
     e.preventDefault();
 
@@ -40,7 +47,7 @@ export const TodoApp = () => {
     const newTodo = {
       id: new Date().getTime(),
       desc: description,
-      done: 'false',
+      done: false,
     }
 
     const action = {
@@ -67,7 +74,12 @@ export const TodoApp = () => {
                 className='list-group-item'
                 key={todo.id}
               >
-                <p className='text-center'>{idx + 1}. {todo.desc}</p>
+                <p
+                  className={`${todo.done && 'complete'}`}
+                  onClick={() => handleToggle(todo.id)}
+                >
+                  {idx + 1}. {todo.desc}
+                </p>
 
                 <button
                   className='btn btn-danger'
