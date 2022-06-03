@@ -18,9 +18,12 @@ import ReactDOM from 'react-dom/client';
 // import './components/08-useReducer/Intro-reducer.js'; //Solo para reducers
 
 //Seccion 10 useReducer
-import { TodoApp } from './components/08-useReducer/TodoApp';
+// import { TodoApp } from './components/08-useReducer/TodoApp';
+
+//Seccion 11 useContext
+import { MainApp } from './components/09-useContext/MainApp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <TodoApp />
+    <MainApp />
 );
