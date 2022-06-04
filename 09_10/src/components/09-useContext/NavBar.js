@@ -13,13 +13,13 @@ export const NavBar = () => {
 
         <ul className="navbar-nav">
           <li className="nav-item">
-            <NavLink activeClassName='active' className="nav-item nav-link" to='./'>Home</NavLink>
+            <NavLink className="nav-item nav-link" to='./'>Home</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink activeClassName='active' className="nav-item nav-link" to='./login'>Features</NavLink>
+            <NavLink className="nav-item nav-link" to='./login'>Features</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink activeClassName='active' className="nav-item nav-link" to='about'>Features</NavLink>
+            <NavLink className="nav-item nav-link" to='about'>Features</NavLink>
           </li>
         </ul>
 
