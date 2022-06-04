@@ -12,6 +12,10 @@ export const HomeScreen = () => {
       <h1>HomeScreen</h1>
       <hr />
 
+      <pre>
+        {JSON.stringify(user, null, 3)}
+      </pre>
+
     </div>
   )
 }

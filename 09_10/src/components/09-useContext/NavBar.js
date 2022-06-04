@@ -16,10 +16,10 @@ export const NavBar = () => {
             <NavLink className="nav-item nav-link" to='./'>Home</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-item nav-link" to='./login'>Features</NavLink>
+            <NavLink className="nav-item nav-link" to='./login'>Login</NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-item nav-link" to='about'>Features</NavLink>
+            <NavLink className="nav-item nav-link" to='about'>About</NavLink>
           </li>
         </ul>
 
